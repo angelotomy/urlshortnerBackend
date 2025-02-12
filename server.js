@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: 'https://urlshortener-frontend-azure.vercel.app/' }));
+app.use(cors({ origin: '*' }));
 
 // URL model
 const Url = require('./models/Url');
