@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors({ origin: 'https://urlshortener-frontend-azure.vercel.app/' }));
 
 // URL model
-const Url = require('./models/urlModel');
+const Url = require('./models/Url');
 
 // Route for URL shortening
 app.post('/shorten', async (req, res) => {
