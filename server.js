@@ -36,7 +36,7 @@ app.post('/shorten', async (req, res) => {
   try {
     // Save the new URL in the database
     await newUrl.save();
-    res.json({ shortUrl: `https://urlshortener-backend-a2xi.onrender.com/${shortUrl}` });
+    res.json({ shortUrl: `https://urlshortnerbackend-a2xi.onrender.com/${shortUrl}` });
   } catch (err) {
     console.log(err);
     res.status(500).json({ error: "Error while shortening the URL" });
